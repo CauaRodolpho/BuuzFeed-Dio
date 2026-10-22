@@ -1,6 +1,8 @@
-# ⚡ Tech Personality Quiz — Angular 17 & Tailwind CSS
+# ⚡ Tech Personality Quiz — Angular 18 & Tailwind CSS
 
-Aplicação interativa de quiz de perfil técnico desenvolvida como projeto prático para a plataforma **DIO (Digital Innovation One)**, com foco em modernização de arquitetura e estilização avançada com Tailwind CSS.
+...
+
+O objetivo do projeto foi refatorar e evoluir o desafio clássico da DIO, trazendo uma abordagem moderna utilizando as melhores práticas das versões mais recentes do **Angular (17/18+)** (Standalone Components, nova sintaxe de Control Flow com `@if` e `@for`) integrada a uma interface responsiva, elegante e de alto contraste em **Dark Theme** com **Tailwind CSS**.
 
 ---
 
