@@ -1,59 +1,52 @@
-# BuuzFeed
+# ⚡ Tech Personality Quiz — Angular 17 & Tailwind CSS
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.2.3.
+Aplicação interativa de quiz de perfil técnico desenvolvida como projeto prático para a plataforma **DIO (Digital Innovation One)**, com foco em modernização de arquitetura e estilização avançada com Tailwind CSS.
 
-## Development server
+---
 
-To start a local development server, run:
+## 🎯 Sobre o Projeto
 
-```bash
+O objetivo do projeto foi refatorar e evoluir o desafio clássico da DIO, trazendo uma abordagem moderna utilizando as melhores práticas do **Angular 17+** (Standalone Components, nova sintaxe de Control Flow com `@if` e `@for`) integrada a uma interface responsiva, elegante e de alto contraste em **Dark Theme** com **Tailwind CSS**.
+
+---
+
+## 🚀 Tecnologias Utilizadas
+
+* **[Angular 17+](https://angular.dev/)** — Framework principal com Standalone Components
+* **[Tailwind CSS](https://tailwindcss.com/)** — Estilização utilitária e design responsivo
+* **TypeScript** — Tipagem estática e modelos de dados para as questões e resultados
+* **JSON** — Arquitetura de dados para o questionário e diagnósticos
+
+---
+
+## 🛠️ Como Executar o Projeto
+
+### Pré-requisitos
+* Node.js (versão 18 ou superior)
+* Angular CLI instalado (`npm install -g @angular/cli`)
+
+### Passo a passo
+
+1. **Clonar o repositório:**
+   ```bash
+   git clone [https://github.com/CauaRodolpho/BuuzFeed.git](https://github.com/CauaRodolpho/BuuzFeed.git)
+   cd BuuzFeed
+Instalar as dependências:
+
+Bash
+npm install
+Executar a aplicação:
+
+Bash
 ng serve
-```
+Acessar no navegador:
+Navegue até http://localhost:4200/
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+📌 Aprendizados & Destaques
+Control Flow Nativo: Substituição das diretivas tradicionais *ngIf e *ngFor pela sintaxe nativa @if e @for.
 
-## Code scaffolding
+Design Responsivo: Construção de layout em tema escuro (Dark/Sky/Slate) com alto contraste para melhor usabilidade.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Tipagem Flexível com JSON: Configuração do tsconfig.json (resolveJsonModule) para leitura e renderização dinâmica dos resultados do quiz.
 
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Desenvolvido por Cauã Rodolpho • Fênix Dev 🚀

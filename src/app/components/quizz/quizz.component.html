@@ -1,0 +1,83 @@
+<!-- src/app/components/quizz/quizz.component.html -->
+<div class="max-w-3xl mx-auto px-4 py-12">
+
+  <header class="text-center mb-10">
+    <span class="inline-block px-3 py-1 bg-sky-500/20 text-sky-400 text-xs font-bold tracking-wider uppercase rounded-full border border-sky-500/30 mb-3">
+      Quiz Técnico
+    </span>
+    <h1 class="text-3xl sm:text-5xl font-black uppercase tracking-wider text-white drop-shadow-md">
+      {{ title }}
+    </h1>
+    <p class="text-xs sm:text-sm text-slate-300 mt-3 tracking-widest uppercase font-semibold">
+      Avalie seu perfil com base em cenários reais de desenvolvimento
+    </p>
+  </header>
+
+  <main class="bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-10 shadow-2xl">
+
+    @if (!finished) {
+      <div class="space-y-6">
+
+        <div class="flex items-center justify-between text-xs font-bold text-sky-400 uppercase tracking-widest pb-3 border-b border-slate-800">
+          <span class="bg-slate-950 px-3 py-1 rounded-md border border-slate-800 text-white">
+            {{ questionSelected.category }}
+          </span>
+          <div class="flex items-center gap-3 text-white">
+            <span>{{ questionIndex + 1 }} / {{ questionMaxIndex }}</span>
+            <div class="w-28 bg-slate-950 h-3 rounded-full overflow-hidden border border-slate-800">
+              <div
+                class="bg-sky-500 h-full transition-all duration-300"
+                [style.width.%]="((questionIndex + 1) / questionMaxIndex) * 100">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="text-xl sm:text-2xl font-bold text-white text-center py-4 leading-relaxed">
+          {{ questionSelected.question }}
+        </h2>
+
+        <div class="grid grid-cols-1 gap-4 pt-2">
+          @for (option of questionSelected.options; track option.id) {
+            <button
+              (click)="playerChoose(option.alias)"
+              class="w-full text-left bg-slate-950 hover:bg-sky-950 border border-slate-800 hover:border-sky-500 text-white font-semibold px-5 py-4 rounded-xl transition-all duration-200 hover:scale-[1.01] hover:shadow-lg flex items-center justify-between group cursor-pointer">
+              <span class="pr-4 leading-snug">{{ option.name }}</span>
+              <span class="text-sky-400 group-hover:text-sky-300 transition-colors text-lg font-bold">➔</span>
+            </button>
+          }
+        </div>
+
+      </div>
+    }
+
+    @if (finished) {
+      <div class="text-center py-6 space-y-6">
+        <span class="inline-block px-4 py-1.5 bg-sky-500/20 text-sky-400 text-xs font-bold uppercase tracking-widest rounded-full border border-sky-500/30">
+          {{ selectedResult.tag }}
+        </span>
+
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-sky-400 tracking-wide">
+          {{ selectedResult.title }}
+        </h2>
+
+        <p class="text-base text-white max-w-xl mx-auto leading-relaxed border-t border-b border-slate-800 py-4 font-medium">
+          {{ selectedResult.description }}
+        </p>
+
+        <div class="pt-4">
+          <button
+            (click)="restartQuizz()"
+            class="bg-sky-500 hover:bg-sky-400 text-slate-950 font-black px-8 py-3.5 rounded-xl shadow-lg transition-all hover:scale-105 active:scale-95 uppercase tracking-wider cursor-pointer">
+            Refazer Diagnóstico 🔄
+          </button>
+        </div>
+      </div>
+    }
+
+  </main>
+
+  <footer class="text-center mt-8 text-xs text-slate-400 font-semibold">
+    Fênix Dev
+  </footer>
+</div>

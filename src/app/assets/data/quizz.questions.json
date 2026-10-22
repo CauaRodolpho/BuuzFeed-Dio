@@ -1,0 +1,82 @@
+{
+  "title": "Qual Arquétipo de Desenvolvedor Você Seria?",
+  "questions": [
+    {
+      "id": 1,
+      "category": "Resolução de Problemas",
+      "question": "Como você reage quando surge um bug crítico em produção?",
+      "options": [
+        { "id": 1, "name": "Abro o debugger, analiso os logs com calma e isolo a causa raiz", "alias": "A" },
+        { "id": 2, "name": "Crio uma solução rápida de emergência para manter o sistema no ar", "alias": "B" },
+        { "id": 3, "name": "Reescrevo o módulo inteiro com uma arquitetura mais limpa e moderna", "alias": "C" },
+        { "id": 4, "name": "Reúno a equipa imediatamente para alinhar a estratégia de correção", "alias": "D" }
+      ]
+    },
+    {
+      "id": 2,
+      "category": "Ferramentas & Workflow",
+      "question": "Qual é a sua prioridade ao iniciar um novo projeto?",
+      "options": [
+        { "id": 1, "name": "Garantir tipagem estática rigorosa e testes unitários automatizados", "alias": "A" },
+        { "id": 2, "name": "Entregar a primeira versão funcional (MVP) o mais rápido possível", "alias": "B" },
+        { "id": 3, "name": "Ajustar a UI/UX com componentes estilizados e transições suaves", "alias": "C" },
+        { "id": 4, "name": "Desenhar o diagrama de arquitetura e alinhar os requisitos de negócio", "alias": "D" }
+      ]
+    },
+    {
+      "id": 3,
+      "category": "Estilo de Código",
+      "question": "O que torna um código verdadeiramente elegante para você?",
+      "options": [
+        { "id": 1, "name": "Seguir à risca os princípios SOLID, Clean Code e Design Patterns", "alias": "A" },
+        { "id": 2, "name": "Ser simples, direto ao ponto e sem complexidade desnecessária", "alias": "B" },
+        { "id": 3, "name": "Ter uma interface impecável e componentes altamente reutilizáveis", "alias": "C" },
+        { "id": 4, "name": "Estar perfeitamente documentado e fácil de ser mantido por qualquer um", "alias": "D" }
+      ]
+    },
+    {
+      "id": 4,
+      "category": "Aprendizado & Evolução",
+      "question": "Qual tipo de tecnologia mais desperta o seu interesse?",
+      "options": [
+        { "id": 1, "name": "Sistemas distribuídos, compilers e otimização de performance", "alias": "A" },
+        { "id": 2, "name": "Frameworks modernos de prototipagem e ferramentas de automação", "alias": "B" },
+        { "id": 3, "name": "Micro-frontends, animações CSS e Design Systems responsivos", "alias": "C" },
+        { "id": 4, "name": "Metodologias ágeis, gestão de produtos e liderança técnica", "alias": "D" }
+      ]
+    },
+    {
+      "id": 5,
+      "category": "Trabalho em Equipa",
+      "question": "Qual é o seu papel natural dentro do time de desenvolvimento?",
+      "options": [
+        { "id": 1, "name": "O especialista técnico a quem todos recorrem para resolver dúvidas difíceis", "alias": "A" },
+        { "id": 2, "name": "O resolvedor de problemas veloz que faz o projeto andar sem travar", "alias": "B" },
+        { "id": 3, "name": "O defensor do utilizador final e da experiência visual impecável", "alias": "C" },
+        { "id": 4, "name": "O facilitador que conecta os desenvolvedores com os objetivos do projeto", "alias": "D" }
+      ]
+    }
+  ],
+  "results": {
+    "A": {
+      "title": "Arquiteuto de Software Meticuloso 🏛️",
+      "description": "Sua prioridade é a qualidade estrutural, previsibilidade e robustez. Você domina padrões de projeto e garante que a base do código seja escalável.",
+      "tag": "Clean Code & System Design"
+    },
+    "B": {
+      "title": "Desenvolvedor Hacker Pragmático ⚡",
+      "description": "Focado em entregas de alto valor em tempo recorde. Você resolve gargalos rapidamente, adapta-se a mudanças e faz o produto acontecer.",
+      "tag": "High Velocity & Problem Solving"
+    },
+    "C": {
+      "title": "Especialista Frontend & UI/UX 🎨",
+      "description": "A sua paixão está na usabilidade e nos detalhes visuais. Você transforma requisitos complexos em interfaces dinâmicas, responsivas e elegantes.",
+      "tag": "Design Systems & User Experience"
+    },
+    "D": {
+      "title": "Líder Técnico & Tech Lead 👑",
+      "description": "Você une a visão estratégica do negócio com o ecossistema técnico da equipa. Excelente comunicação, visão holística e foco no sucesso coletivo.",
+      "tag": "Leadership & Strategy"
+    }
+  }
+}
